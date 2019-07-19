@@ -1,0 +1,8 @@
+@mixin font--arial($size: false, $colour: false, $fontWeight: false,  $lineHeight: false, $letterSpacing: false) {
+    font-family: Arial, Helvetica, sans-serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $fontWeight { font-weight: $fontWeight; }
+    @if $lineHeight { line-height: $lineHeight; }
+    @if $letterSpacing { letter-spacing: $letterSpacing; }
+}

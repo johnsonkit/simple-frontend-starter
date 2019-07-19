@@ -1,0 +1,11 @@
+/*
+  Typography
+ */
+html {
+  font-size: 16px;
+  font-family: $baseFontFamily;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

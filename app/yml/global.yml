@@ -1,0 +1,20 @@
+# Global data
+winnieThePooh:
+  -
+    caption: >
+      Pooh in an illustration by E. H. Shepard
+    img: Pooh_Shepard1928.jpg
+  -
+    caption: >
+      Harry Colebourn and Winnie, 1914
+    img: Harry_Colebourne_and_Winnie.jpg
+  -
+    caption: >
+      Statue in Winnipeg of Harry Colebourn and Winnie
+    img: Assiniboine_Park_Zoo_Winnipeg.jpg
+  -
+    caption: >
+      A plaque on Winnie-the-Pooh Street<br>(ulica Kubusia Puchatka) in Warsaw
+    img: Warszawa_Kubusia_Puchatka.jpg
+
+

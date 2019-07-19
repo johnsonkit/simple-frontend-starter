@@ -1,0 +1,44 @@
+{% extends 'layouts/base.njk' %}
+{% block title -%}Index Page{%- endblock %}
+{% block css -%}<link rel="stylesheet" href="css/app.css" inline>{%- endblock %}
+{% block js -%}<script src="js/app.js" inline></script>{%- endblock %}
+
+{% block content -%}
+<div class="demo">
+    <header>
+        <h1>Welcome to the template-starter-kit.</h1>
+    </header>
+    <main>
+        <h1>Winnie The Pooh</h1>
+        <p>This is a sample page. The images and caption are acquired from the <a href="https://en.wikipedia.org/wiki/Winnie-the-Pooh" target="_blank">WIKI</a>. The video is acquired from <a href="https://www.youtube.com/watch?v=-SwWL5xCzhM" target="_blank">youtube</a></p>
+        <ul>
+            {% for item in winnieThePooh %}
+            <li>
+                <figure>
+                    <img src="./images/{{item.img}}" alt="{{item.caption}}"/>
+                    <figcaption>{{item.caption | safe}}</figcaption>
+                </figure>
+            </li>
+            {% endfor %}
+        </ul>
+        
+        <article>
+            <p>Pooh Bear dreams of a world made of yummy honey -- what more could a bear desire?</p>
+            <div class="videoWrapper">
+                <!-- Copy & Pasted from YouTube -->
+                <iframe width="947" height="533" src="https://www.youtube.com/embed/-SwWL5xCzhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </article>
+        
+
+        
+    </main>
+    <footer>
+        <p>
+            <small>This page was last edited on 18 July 2019.</small>
+        <p>
+    </footer>
+
+</div>
+
+{%- endblock %}

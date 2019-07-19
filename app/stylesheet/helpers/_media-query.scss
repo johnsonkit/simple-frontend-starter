@@ -1,0 +1,15 @@
+// mobile
+@mixin mq-ml-up {
+	@media (min-width: $mq-mobile-landscape) { @content; }
+}
+// tablet
+@mixin mq-tp-up {
+	@media (min-width: $mq-tablet-portrait) { @content; }
+}
+@mixin mq-tl-up {
+	@media (min-width: $mq-tablet-landscape) { @content; }
+}
+// desktop
+@mixin mq-d-up {
+	@media (min-width: $mq-desktop) { @content; }
+}

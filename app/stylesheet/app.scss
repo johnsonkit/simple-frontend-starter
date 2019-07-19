@@ -1,0 +1,100 @@
+@import "helpers/variables";
+@import "helpers/media-query";
+@import "helpers/mixins";
+@import "base/normalize";
+@import "base/typography";
+
+.demo {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h1, h2, p, li {
+    text-align: center;
+  }
+
+  h1 {
+    @include font--arial(1.5rem, #333, 600, 1.5, normal);
+    @include mq-tp-up {
+      font-size: 2rem;
+    }
+  }
+  
+  h2 {
+    @include font--arial(1.3rem, #333, 600, 1.5, normal);
+  }
+  
+  p {
+    @include font--arial(1rem, #444, 400, 1.5, normal);
+    @include mq-tp-up {
+      font-size: 1.3rem;
+    }
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /*
+    Header
+    */
+  > header {
+    padding: 1rem 0;
+    background: #eee;
+  }
+
+  /*
+    Main
+    */
+  main {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    a {
+      color: #444;
+      transition: all .3s;
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    figure {
+      margin: .5rem;
+      figcaption {
+        @include font--arial(.7rem, #444, 400, 1.5, normal);
+      }
+    }
+
+    article {
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+  }
+
+  /*
+    Footer
+    */
+  footer {
+    border-top: solid 1px #bbb;
+    p {
+      font-size: 1rem;
+    }
+  }
+
+}
+
